@@ -44,6 +44,3 @@
 - **作者**: Gu Wenhao
 - **版本**: v1.0.0
 - **创建时间**: 2026年5月
-
----
-*Powered by Antigravity AI*
