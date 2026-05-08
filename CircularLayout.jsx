@@ -1,3 +1,36 @@
+//DESCRIPTION: Advanced Circular Layout for InDesign
+
+/*
+About Script
+Arranges selected objects along a circular path with precise control over 
+angles, distribution, and alignment. Ideal for creating circular text labels, 
+infographics, or decorative layouts.
+
+Includes an option to draw radial lines (spokes) from the circle center 
+to each object, automatically organized into separate layers for easy management.
+
+To Use:
+1. Select one or more objects (text frames, rectangles, etc.) in your document.
+2. Run the script.
+3. Set the circle center (X, Y) and radius in millimeters.
+4. Choose a layout mode:
+   - Custom Range: Evenly distributes objects between Start and End angles.
+   - Fixed Interval: Places objects starting from Start Angle with a fixed step.
+5. Select alignment mode (Bottom Center, Left Bottom, or Right Bottom) to 
+   determine how objects sit on the circular path.
+6. Optional: Toggle "Draw Radial Lines" to visualize the structure.
+7. Click OK.
+
+Notes:
+- The script automatically creates "Circular Text" and "Radial Lines" layers.
+- Alignment modes adjust both the position and rotation of objects relative 
+  to the center point.
+- The operation is fully undoable (Cmd+Z).
+
+Copyright (c) by Gu Wenhao, 2026
+Version 1.0.0
+*/
+
 function main() {
     // 1. 检查文档和选中项
     if (app.documents.length == 0) {
